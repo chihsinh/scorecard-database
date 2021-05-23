@@ -23,6 +23,7 @@ Users can delete all scorecards in the database by clicking the "Clear" button.
 </p>
 
 To search for scorecards under certain conditions, users can fill in the conditions in the inputs, and click the "Query" button. For example, below is the query result for the condition "subject: Math". If there are more than five scorecards meeting the search condition, the site just shows the first five scorecards and users have to click on “Next” or other page numbers to view more. The system sorts the results by the alphabetical order of the names and subjects.
+<p align="center">
   <img src="https://raw.githubusercontent.com/kanapki/scorecard-database/master/screenshots/screenshot5.png" width="600">
 </p>
 <p align="center">
