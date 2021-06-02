@@ -27,7 +27,7 @@ router.get('/', async function (req, res) {
       let string = '';
       for (var i = 0; i < keys.length; i++) {
         if (i === keys.length - 1) {
-          string = string + keys[i] + ' (' + capitalizeFst(target[keys[i]]) + '). '
+          string = string + keys[i] + ' (' + capitalizeFst(target[keys[i]]) + ') '
         }
         else {
           string = string + keys[i] + ' (' + capitalizeFst(target[keys[i]]) + '), '

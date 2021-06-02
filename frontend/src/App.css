@@ -115,6 +115,8 @@ input:hover {
   height: 30vh;
   margin-top: 3%;
   padding-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
   border-width: 3px;
   border-style: solid;
   border-color: #FFFFFF;

@@ -10,7 +10,7 @@ const instance = axios.create({
 
 function ScoreCardDB() {
   const [queryResult, setQueryResult] = useState([]);
-  const [showText, setShowText] = useState('');
+  const [showText, setShowText] = useState('To add a scorecard to the database, fill in all 3 fields above, and press "Add". To search for scorecards in the database, fill in a certain condition of 1 or 2 fields, and press "Query".');
   const [input, setInput] = useState({
       name: null,
       subject: null,
