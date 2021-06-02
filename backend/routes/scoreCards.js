@@ -14,23 +14,18 @@ router.get('/', async function (req, res) {
   const target = {
     ...req.query
   }
-  console.log(req.query);
   ScoreCard.findOne(target)
   .then(result => {
     if (result) {
       ScoreCard.find(target)
       .then(result => {
-        console.log(result);
         res.status(200).send(result);
       })
     }
     else {
-      console.log('cannot find');
       const keys = Object.keys(target);
-      console.log(keys);
       let string = '';
       for (var i = 0; i < keys.length; i++) {
-        console.log(target[keys[i]])
         if (i === keys.length - 1) {
           string = string + keys[i] + ' (' + capitalizeFst(target[keys[i]]) + '). '
         }
@@ -47,7 +42,6 @@ router.get('/', async function (req, res) {
 //delete all
 //return 'Database cleared'
 router.delete('/', async function (req, res) {
-  console.log('clear requested')
   ScoreCard.deleteMany({})
   .then(() => res.sendStatus(200))
   .catch(err => res.json('Error: ' + err));
@@ -75,7 +69,6 @@ router.post('/add', async function (req, res) {
           console.log(err)
         }
         else{
-          console.log("Updated User : ", docs);
           res.sendStatus(200);
         }});
     } else {
